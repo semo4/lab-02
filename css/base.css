@@ -11,13 +11,22 @@ header{
 select{
     height: 50px;
 }
-main{
+.main-1{
     display: flex;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     width: 80%;
     background-color: firebrick;
+    overflow:hidden;
+}
+.main-2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: rgb(36, 34, 178);
     overflow:hidden;
 }
 section{
