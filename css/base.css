@@ -2,6 +2,15 @@ img{
     width: 100px;
     height: 100px;
 }
+header{
+
+    text-align: center;
+    justify-content: center;
+    
+}
+select{
+    height: 50px;
+}
 main{
     display: flex;
     margin-left: auto;
