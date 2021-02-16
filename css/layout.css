@@ -1,0 +1,17 @@
+.photo-template2{
+  box-sizing: border-box;
+  border: gray 1px solid;
+  width: 290px;
+  height: 450px;
+  background-color: #3397e9;
+  /* margin: auto; */
+  display: inline-block;
+  margin-top: 90px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-left:36px ;
+}
+
+footer{
+  text-align: center;
+}
