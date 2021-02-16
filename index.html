@@ -4,55 +4,41 @@
   <head>
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
       
-      <select id="menu">
+      <select id="menu"></select>
+      <nav>
+        <button id="page-1">Page 1</button>
+        <button id="page-2">Page 2</button>
+        <button id="title">title</button>
+        <button id="horns">horns</button>
         
-      </select>
+      </nav>
     </header>
-    <div>
-      <button id="page-1">Page 1</button>
-      <button id="page-2">Page 2</button>
-      <!-- <select id="sort">
-        <option value="title">Sort By Title</option>
-        <option value="number">Sort By # Horns</option>
-      </select> -->
-      <button id="title">title</button>
-      <button id="horns">horns</button>
-    </div>
     <main class="main-1">
-      
       <!-- <section class="photo-template">
         <h2></h2>
         <img src="" alt="">
         <p></p>
         <p id="num-of-horns"></p>
       </section> -->
-
-     
     </main>
+
+    <main class="main-2"></main>
 
     <template id="template-2" type="text/x-tmpl-mustache">
-    <section class="photo-template2">
-      <h2>{{title}}</h2>
-      <img src="{{image_url}}" alt="">
-      <p>{{description}}</p>
-      <p id="num-of-horns">{{horns}}</p>
-    </section>
+        <section class="photo-template2">
+          <h2>{{title}}</h2>
+          <img src="{{image_url}}" alt="">
+          <p>{{description}}</p>
+          <p id="num-of-horns">{{horns}}</p>
+        </section>
   </template>
-
-    <main class="main-2">
-
-     
-
-
-    </main>
     <footer>
       &copy; 2018 Code Fellows
     </footer>
