@@ -9,6 +9,11 @@ main{
     flex-wrap: wrap;
     width: 80%;
     background-color: firebrick;
+    overflow:hidden;
+}
+section{
+    width: 25%;
+
 }
 p{
     
