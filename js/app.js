@@ -214,8 +214,8 @@ function sortOnHorns() {
 
   if (pageName === "page-1") {
     arrayImages.sort(function (a, b) {
-      if (a.horns < b.horns) return 1;
-      if (b.horns < a.horns) return -1;
+      if (a.horns > b.horns) return 1;
+      if (b.horns > a.horns) return -1;
 
       return 0;
     });
@@ -227,8 +227,8 @@ function sortOnHorns() {
   }
   if (pageName === "page-2") {
     arrayImagesTwo.sort(function (a, b) {
-      if (a.horns < b.horns) return 1;
-      if (b.horns < a.horns) return -1;
+      if (a.horns > b.horns) return 1;
+      if (b.horns > a.horns) return -1;
 
       return 0;
     });
