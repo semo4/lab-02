@@ -96,8 +96,12 @@ function selectKeywords(){
     $("#menu").on('change',function(){
       var name=this.options[this.selectedIndex].text;
       if(name ==="default"){
-        arrayImages = [];
-        Images.readJson();
+        var newPhotoTemplate2=$('.photo-template').clone();
+        $('.main-1').html("");
+        $('.main-1').append(newPhotoTemplate2);  
+        arrayImages.forEach(function(value,i){
+            value.renderImages();
+        });
       }else{
         var newPhotoTemplate2=$('.photo-template').clone();
         $('.main-1').html("");
@@ -115,8 +119,12 @@ function selectKeywords(){
     $("#menu").on('change',function(){
       var name=this.options[this.selectedIndex].text;
       if(name ==="default"){
-        arrayImagesTwo = [];
-        ImagesTwo.readJson2();
+        var newPhotoTemplateTwo=$('#template-2').clone();
+        $('.main-2').html("");
+        $('.main-2').append(newPhotoTemplateTwo);  
+        arrayImagesTwo.forEach(function(value,i){
+            value.renderImagesTwo();
+        });
         
       }else{
         var newPhotoTemplateTwo=$('#template-2').clone();
